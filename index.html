@@ -28,6 +28,7 @@
               .join("");
           })
           .catch(function (err) {
+            console.log('error is', err)
             document.getElementById("people").innerHTML =
               '<li class="text-danger">' + err.message + "</li>";
           });
